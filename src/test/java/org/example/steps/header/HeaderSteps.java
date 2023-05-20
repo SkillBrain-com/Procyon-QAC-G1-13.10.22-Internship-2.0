@@ -4,21 +4,17 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pages.HomePage;
-import org.example.pages.header.NavigateToHomePage;
+import org.example.pages.header.CookiesPage;
 import org.example.pages.header.VisibleHeaderOnWebsitePage;
+import org.example.properties.Environment;
 import org.picocontainer.annotations.Inject;
 
 public class HeaderSteps {
     @Inject
-    NavigateToHomePage navigateToHomePage;
+    CookiesPage cookiesPage;
 
     @Inject
     VisibleHeaderOnWebsitePage visibleHeaderOnWebsitePage;
-
-    @Given("I am on the https://pl-galeria-warminska-uat.azurewebsites.net website")
-    public void i_am_on_the_website(){
-        navigateToHomePage.navigateToHomePage();
-    }
 
     @When("I notice the top of the page")
     public void i_notice_the_top_of_the_page(){

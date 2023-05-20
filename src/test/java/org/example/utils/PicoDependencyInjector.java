@@ -18,7 +18,6 @@ public class PicoDependencyInjector implements ObjectFactory {
         addClass(AccountPage.class);
         addClass(CookiesPage.class);
         addClass(VisibleHeaderOnWebsitePage.class);
-        addClass(NavigateToHomePage.class);
         addClass(InspirationsPage.class);
     }
 
