@@ -1,0 +1,12 @@
+<suite name="Suite_TestNG_Project_Internship" verbose="1" >
+    <test name="clickOnGiftCard">
+        <classes>
+            <class name="org.example.steps.header.CookiesSteps"/>
+            <class name="org.example.steps.header.GiftCardSteps"/>
+            <class name="org.example.steps.header.HeaderSteps" />
+            <class name="org.example.steps.header.LanguageToggleSteps"/>
+            <class name="org.example.steps.header.StickyBarSteps"/>
+             <class name="org.example.steps.InspirationsSteps"/>
+        </classes>
+    </test>
+</suite>

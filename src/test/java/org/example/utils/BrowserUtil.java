@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
@@ -13,18 +14,27 @@ public class BrowserUtil {
         WebDriver driver = null;
         switch (Browser.valueOf(browser.toUpperCase())) {
             case CHROME:
-                driver = new ChromeDriver();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--remote-allow-origins=*");
+                chromeOptions.addArguments("start-maximized");
+                driver = new ChromeDriver(chromeOptions);
                 break;
             case FIREFOX:
-                driver = new FirefoxDriver();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--remote-allow-origins=*");
+                firefoxOptions.addArguments("start-maximized");
+                driver = new FirefoxDriver(firefoxOptions);
                 break;
             case EDGE:
-                driver = new EdgeDriver();
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--remote-allow-origins=*");
+                edgeOptions.addArguments("start-maximized");
+                driver = new EdgeDriver(edgeOptions);
                 break;
             case CHROME_HEADLESS:
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless");
-                driver = new ChromeDriver(chromeOptions);
+                ChromeOptions chromeHeadlessOptions = new ChromeOptions();
+                chromeHeadlessOptions.addArguments("--headless");
+                driver = new ChromeDriver(chromeHeadlessOptions);
                 break;
             case FIREFOX_HEADLESS:
                 FirefoxOptions options = new FirefoxOptions();

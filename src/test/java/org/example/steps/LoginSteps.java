@@ -7,6 +7,7 @@ import org.assertj.core.api.Assertions;
 import org.example.pages.AccountPage;
 import org.example.pages.HomePage;
 import org.example.pages.LoginPage;
+import org.example.pages.header.*;
 import org.example.properties.Environment;
 import org.picocontainer.annotations.Inject;
 
@@ -42,5 +43,4 @@ public class LoginSteps {
     public void i_should_see_an_error_message_indicating_that_the_password_is_incorrect() {
         Assertions.assertThat(loginPage.getErrorMessage()).isEqualTo("Invalid email or password");
     }
-
 }
