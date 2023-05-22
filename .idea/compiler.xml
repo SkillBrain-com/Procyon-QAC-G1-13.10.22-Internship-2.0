@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="procyon_practice_cucumber" />
+        <module name="Procyon-QAC-G1-13.10.22-Internship-2.0" />
       </profile>
     </annotationProcessing>
   </component>
