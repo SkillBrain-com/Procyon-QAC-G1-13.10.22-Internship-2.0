@@ -54,10 +54,10 @@ public class InspirationsSteps {
         inspirationsPage.navigateToInspirationPage();
     }
 
-//    @And("I am scrolling down on the page")
-//    public void i_am_scrolling_down_on_the_page(){
-//        inspirationsPage.scrolldownOnPage(500);
-//    }
+    @And("I am scrolling down on the page")
+    public void i_am_scrolling_down_on_the_page(){
+        inspirationsPage.scrolldownOnPage(500);
+    }
 
     @When("I see the inspiration articles section marked as promoted on the homepage and which are published as a carousel on the Inspiration page")
     public void i_see_the_inspiration_articles_section_marked_as_promoted_on_the_homepage_and_which_are_published_as_a_carousel_on_the_Inspiration_page(){

@@ -27,7 +27,7 @@ public class HeaderSteps {
 
     @When("I am scrolling down on the page")
     public void I_am_scrolling_down_on_the_page(){
-        visibleHeaderOnWebsitePage.scrollDownOnPage(500);
+        visibleHeaderOnWebsitePage.scrollDownOnPage(200);
     }
 
     @Then("I should see that the header is keeping sticked at the top of the page while I am scrolling down on the page")
